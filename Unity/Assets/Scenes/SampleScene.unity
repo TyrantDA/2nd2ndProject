@@ -155,10 +155,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &170052634
 Rigidbody2D:
   serializedVersion: 4
@@ -293,10 +293,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &243820189
 Rigidbody2D:
   serializedVersion: 4
@@ -671,10 +671,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &514520300
 Rigidbody2D:
   serializedVersion: 4
@@ -892,10 +892,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &527830226
 Rigidbody2D:
   serializedVersion: 4
@@ -1132,10 +1132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!1 &608303575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,10 +1168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &608303577
 Rigidbody2D:
   serializedVersion: 4
@@ -1306,10 +1306,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &885681039
 Rigidbody2D:
   serializedVersion: 4
@@ -1553,10 +1553,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &1077314655
 Rigidbody2D:
   serializedVersion: 4
@@ -1691,10 +1691,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &1114382530
 Rigidbody2D:
   serializedVersion: 4
@@ -1829,10 +1829,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &1126671224
 Rigidbody2D:
   serializedVersion: 4
@@ -1967,10 +1967,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &1339713519
 Rigidbody2D:
   serializedVersion: 4
@@ -2105,10 +2105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &1539881570
 Rigidbody2D:
   serializedVersion: 4
@@ -2243,10 +2243,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &1566423350
 Rigidbody2D:
   serializedVersion: 4
@@ -2381,10 +2381,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &1644002414
 Rigidbody2D:
   serializedVersion: 4
@@ -2519,10 +2519,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &1903267266
 Rigidbody2D:
   serializedVersion: 4
@@ -2766,10 +2766,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de80a316206f9d24c9861350facc3456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveForce: 10
-  jumpForce: 11
-  speedLemming: 0.1
-  jumpLemming: 1
+  MoveForce: 1
+  jumpForce: 1
+  speedLemming: 0.5
+  jumpLemming: 5
 --- !u!50 &2111433623
 Rigidbody2D:
   serializedVersion: 4
