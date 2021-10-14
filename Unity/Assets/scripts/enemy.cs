@@ -8,7 +8,7 @@ public class enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Godskripte.x.Lightning)
+        if (Godskripte.x.godbool1)
         {
 
         }
