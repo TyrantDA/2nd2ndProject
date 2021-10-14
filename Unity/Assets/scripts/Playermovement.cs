@@ -7,11 +7,9 @@ public class Playermovement : MonoBehaviour
     [SerializeField]
     private float MoveForce = 1f;
     [SerializeField]
-    private float jumpForce = 1f;
+    private float jumpForce = 11f;
     [SerializeField]
-    private float speedLemming = 0.1f;
-    [SerializeField]
-    private float jumpLemming = 1f;
+    private float speedLenning = 0.1f;
 
     private float movementX;
 
@@ -62,18 +60,19 @@ public class Playermovement : MonoBehaviour
 
     void wander()
     {       
-            transform.position += new Vector3(MoveForce, 0f, 0f) * Time.deltaTime * speedLemming;
+            transform.position += new Vector3(MoveForce, 0f, 0f) * Time.deltaTime * speedLenning;
     }
     private void FixedUpdate()
     {
+        Playerjump();
     }
   
     void Playerjump()
     {
-        if (Isground == true)
+        if (Input.GetKeyDown(KeyCode.Space) && Isground)
         {
-            mybody.AddForce( new Vector2(0f, jumpForce)* jumpLemming, (ForceMode2D.Impulse));
             Isground = false;
+            mybody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -90,10 +89,6 @@ public class Playermovement : MonoBehaviour
         if(collision.gameObject.CompareTag("wall"))
         {
             MoveForce *= -1f; 
-        }
-        if(collision.gameObject.CompareTag("barrier"))
-        {
-            Playerjump();
         }
 
     }
