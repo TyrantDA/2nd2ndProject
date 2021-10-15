@@ -1343,6 +1343,7 @@ MonoBehaviour:
   godbool3: 0
   godbool4: 0
   godbool5: 0
+  Lightningcooldown: 0
 --- !u!1 &1074058113
 GameObject:
   m_ObjectHideFlags: 0

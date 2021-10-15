@@ -14,12 +14,13 @@ public class Godskripte : MonoBehaviour
     public bool godbool3 = false;
     public bool godbool4 = false;
     public bool godbool5 = false;
+    public bool Lightningcooldown = true;
 
     // Start is called before the first frame update
     void Start()    
     {
         x = this;
-
+        Lightningcooldown = true;
     }
 
     // Update is called once per frame
@@ -34,16 +35,30 @@ public class Godskripte : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                spawnPosition.z = 0.0f;
-                spawnPosition.y = -0.484f;
-                Debug.Log(spawnPosition);
-                GameObject objectInstance = Instantiate(placeholder, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
-                spawnPosition.y = 1.2f;
-                GameObject objectInstance2 = Instantiate(lightningbox, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+                if (Lightningcooldown)
+                {
+                    Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    spawnPosition.z = 0.0f;
+                    spawnPosition.y = -0.484f;
+                    GameObject objectInstance = Instantiate(placeholder, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+                    spawnPosition.y = 1.2f;
+                    GameObject objectInstance2 = Instantiate(lightningbox, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+                    Lightningcooldown = false;
+                    StartCoroutine(WaitTime());
+
+
+                }
 
             }
         }
+    }
+    private IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Lightningcooldown = true;
+
+
+
     }
 
 }
