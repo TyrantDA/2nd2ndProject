@@ -20,7 +20,6 @@ public class lightningkill : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("lightning"))
         {
-            Debug.Log("hello");
             Destroy(gameObject);
         }
 

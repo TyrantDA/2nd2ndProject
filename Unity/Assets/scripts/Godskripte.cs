@@ -6,6 +6,8 @@ public class Godskripte : MonoBehaviour
 {
     [SerializeField]
     GameObject placeholder = null;
+    [SerializeField]
+    GameObject lightningbox = null;
     public static Godskripte x;
     public bool godbool1 = false;
     public bool godbool2 = false;
@@ -14,7 +16,7 @@ public class Godskripte : MonoBehaviour
     public bool godbool5 = false;
 
     // Start is called before the first frame update
-    void Start()
+    void Start()    
     {
         x = this;
 
@@ -34,9 +36,12 @@ public class Godskripte : MonoBehaviour
             {
                 Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 spawnPosition.z = 0.0f;
-                spawnPosition.y = -0.91f;
+                spawnPosition.y = -0.484f;
                 Debug.Log(spawnPosition);
                 GameObject objectInstance = Instantiate(placeholder, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+                spawnPosition.y = 1.2f;
+                GameObject objectInstance2 = Instantiate(lightningbox, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+
             }
         }
     }
