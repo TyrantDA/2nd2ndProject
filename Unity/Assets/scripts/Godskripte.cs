@@ -28,11 +28,17 @@ public class Godskripte : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (godbool1)
         {
-            Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            spawnPosition.z = 0.0f;
-            GameObject objectInstance = Instantiate(placeholder, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                spawnPosition.z = 0.0f;
+                spawnPosition.y = -0.91f;
+                Debug.Log(spawnPosition);
+                GameObject objectInstance = Instantiate(placeholder, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
+            }
         }
     }
+
 }
