@@ -7,6 +7,7 @@ public class breathfrog : MonoBehaviour
     [SerializeField]
     private Animator anim;
     public string breathing = "isbreath";
+    public bool going = false;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -21,13 +22,23 @@ public class breathfrog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(breath());
+        if (!going)
+        {
+            going = true;
+            StartCoroutine(breath());
+
+        }
+
     }
     private IEnumerator breath()
     {
         anim.SetBool(breathing, true);
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(1f);
         anim.SetBool(breathing, false);
+        yield return new WaitForSeconds(7f);
+        going = false;
+
+
 
     }
 }
