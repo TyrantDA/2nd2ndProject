@@ -107,10 +107,6 @@ public class Playermovement : MonoBehaviour
         {
             MoveForce *= -1f; 
         }
-        if(collision.gameObject.CompareTag("barrier"))
-        {
-            Playerjump();
-        }
         
 
     }
@@ -120,6 +116,10 @@ public class Playermovement : MonoBehaviour
         {
             Invoke("death", 5f);
            
+        }
+        if (collision.gameObject.CompareTag("barrier"))
+        {
+            Invoke("Playerjump", 4f);
         }
     }
 } //class
