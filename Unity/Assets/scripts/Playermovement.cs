@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class Playermovement : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class Playermovement : MonoBehaviour
 
     private bool Isground = true;
     private bool wanderDirection = true;
+
+    [SerializeField]
+    private GameObject angel;
 
     private void Awake()
     {
@@ -76,6 +80,13 @@ public class Playermovement : MonoBehaviour
             Isground = false;
         }
     }
+
+    void death()
+    {
+        Instantiate(angel, transform.position, transform.rotation);
+        Destroy(gameObject);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
@@ -85,16 +96,30 @@ public class Playermovement : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
+            death();
         }
-        if(collision.gameObject.CompareTag("wall"))
+        if (collision.gameObject.CompareTag("KillBox"))
+        {
+            // need to be careful happen lemming to close together my course errors
+            death();
+        }
+        if (collision.gameObject.CompareTag("wall"))
         {
             MoveForce *= -1f; 
         }
-        if(collision.gameObject.CompareTag("barrier"))
-        {
-            Playerjump();
-        }
+        
 
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("water"))
+        {
+            Invoke("death", 5f);
+           
+        }
+        if (collision.gameObject.CompareTag("barrier"))
+        {
+            Invoke("Playerjump", 4f);
+        }
     }
 } //class
