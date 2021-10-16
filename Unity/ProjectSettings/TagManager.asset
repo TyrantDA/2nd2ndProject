@@ -9,6 +9,8 @@ TagManager:
   - wall
   - barrier
   - lightning
+  - KillBox
+  - water
   layers:
   - Default
   - TransparentFX
