@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3465025474346333050}
   m_Layer: 0
   m_Name: Brian
-  m_TagString: Untagged
+  m_TagString: lightning
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,6 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   breathing: isbreath
+  going: 0
 --- !u!114 &3320721418795037902
 MonoBehaviour:
   m_ObjectHideFlags: 0

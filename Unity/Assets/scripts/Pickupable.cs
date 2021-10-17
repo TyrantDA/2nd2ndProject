@@ -6,16 +6,19 @@ public class Pickupable : MonoBehaviour
 {
     // Start is called before the first frame update
     private bool pressed = false;
+    [SerializeField]
+    private float MinX, MaxX;
     void Start()
     {
-        
+        MinX = -3.445169f;
+        MaxX = 40f;
     }
     private void OnMouseDown()
     {
         if (Godskripte.x.godbool2)
         {
             pressed = true;
-            GetComponent<Rigidbody2D>().isKinematic = true;
+            GetComponent<Rigidbody2D>().isKinematic = false;
         }
     }
     private void OnMouseUp()
@@ -29,9 +32,22 @@ public class Pickupable : MonoBehaviour
     {
         if (pressed)
         {
+           
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (mousePos.y < MinX)
+            {
+                mousePos.y = MinX;
+            }
+            if (mousePos.y > MaxX)
+            {
+                mousePos.y = MaxX;
+            }
             transform.position = mousePos;
+            
+
         }
         
     }
+
+
 }
