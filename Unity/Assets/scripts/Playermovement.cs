@@ -26,6 +26,11 @@ public class Playermovement : MonoBehaviour
     [SerializeField]
     private GameObject angel;
 
+    [SerializeField]
+    private int wounds;
+
+    private bool wounded;
+
     private void Awake()
     {
         mybody = GetComponent<Rigidbody2D>();
@@ -38,15 +43,7 @@ public class Playermovement : MonoBehaviour
     {
         System.Random rand = new System.Random();
         int num = rand.Next(10);
-
-        if (num <= 4)
-        {
-            wanderDirection = false;
-        }
-        else
-        {
-            wanderDirection = true;
-        }
+        wounded = false;
     }
 
     // Update is called once per frame
@@ -54,6 +51,16 @@ public class Playermovement : MonoBehaviour
     {
         //playerMoveKeyboard();
         wander();
+        if(wounded)
+        {
+            wounds--;
+        }
+
+        if (wounds <= 0)
+        {
+            death();
+        }
+
     }
 
     void playerMoveKeyboard()
@@ -94,10 +101,7 @@ public class Playermovement : MonoBehaviour
             Isground = true;
 
         }
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            death();
-        }
+       
         if (collision.gameObject.CompareTag("KillBox"))
         {
             // need to be careful happen lemming to close together my course errors
@@ -113,13 +117,30 @@ public class Playermovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("water"))
-        {
-            Invoke("death", 5f);
-           
+        { 
+            wounded = true;
         }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            wounded = true;
+        }
+
         if (collision.gameObject.CompareTag("barrier"))
         {
             Invoke("Playerjump", 4f);
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("water"))
+        {
+            wounded = false;
+        }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            wounded = false;
+        }
+
     }
 } //class

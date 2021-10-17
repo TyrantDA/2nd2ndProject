@@ -160,6 +160,7 @@ MonoBehaviour:
   speedLemming: 0.5
   jumpLemming: 7
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
+  wounds: 5000
 --- !u!50 &119090464
 Rigidbody2D:
   serializedVersion: 4
@@ -539,6 +540,7 @@ MonoBehaviour:
   speedLemming: 0.5
   jumpLemming: 7
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
+  wounds: 5000
 --- !u!50 &415754449
 Rigidbody2D:
   serializedVersion: 4
@@ -678,6 +680,7 @@ MonoBehaviour:
   speedLemming: 0.5
   jumpLemming: 7
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
+  wounds: 5000
 --- !u!50 &443456218
 Rigidbody2D:
   serializedVersion: 4
@@ -1111,6 +1114,7 @@ MonoBehaviour:
   speedLemming: 0.5
   jumpLemming: 7
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
+  wounds: 5000
 --- !u!1 &703594648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,6 +1152,7 @@ MonoBehaviour:
   speedLemming: 0.5
   jumpLemming: 7
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
+  wounds: 5000
 --- !u!50 &703594650
 Rigidbody2D:
   serializedVersion: 4
@@ -1396,6 +1401,7 @@ MonoBehaviour:
   speedLemming: 0.5
   jumpLemming: 7
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
+  wounds: 5000
 --- !u!50 &977049198
 Rigidbody2D:
   serializedVersion: 4
@@ -1535,6 +1541,7 @@ MonoBehaviour:
   speedLemming: 0.5
   jumpLemming: 7
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
+  wounds: 5000
 --- !u!50 &1127669109
 Rigidbody2D:
   serializedVersion: 4
@@ -1674,6 +1681,7 @@ MonoBehaviour:
   speedLemming: 0.5
   jumpLemming: 7
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
+  wounds: 5000
 --- !u!50 &1169761289
 Rigidbody2D:
   serializedVersion: 4
@@ -1813,6 +1821,7 @@ MonoBehaviour:
   speedLemming: 0.5
   jumpLemming: 7
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
+  wounds: 5000
 --- !u!50 &1308133948
 Rigidbody2D:
   serializedVersion: 4
@@ -1952,6 +1961,7 @@ MonoBehaviour:
   speedLemming: 0.5
   jumpLemming: 7
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
+  wounds: 5000
 --- !u!50 &1884563462
 Rigidbody2D:
   serializedVersion: 4
