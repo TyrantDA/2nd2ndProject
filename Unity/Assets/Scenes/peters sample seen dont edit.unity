@@ -918,6 +918,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6984585604530078326, guid: 8f98370ade15632498c45f93fd6021dd, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f98370ade15632498c45f93fd6021dd, type: 3}
 --- !u!1 &150696585
@@ -3727,11 +3731,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746999253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.67, y: -0.27, z: 0}
+  m_LocalPosition: {x: 45.64, y: -0.29, z: 0}
   m_LocalScale: {x: 0.69, y: 0.69, z: 0.530084}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &747129295
 GameObject:
@@ -4008,7 +4012,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 8
-  m_Sprite: {fileID: 21300000, guid: bcf83b44c9b086b4487c8059e49f891a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bdaabb12eded2ff49832604ec31ac5af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4069,7 +4073,7 @@ Animator:
   m_GameObject: {fileID: 799279165}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 50305e4026ccc174b9a1b9eb67f70d1f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6615fe647321be745855f76c24295eef, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4662,7 +4666,7 @@ Transform:
   m_LocalScale: {x: 0.34378505, y: 0.35660827, z: 0.6138099}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &991131329
 PrefabInstance:
@@ -5298,7 +5302,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 8
-  m_Sprite: {fileID: 21300000, guid: bcf83b44c9b086b4487c8059e49f891a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 02f055da118601546a379a4e5432a033, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5359,7 +5363,7 @@ Animator:
   m_GameObject: {fileID: 1119089662}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 50305e4026ccc174b9a1b9eb67f70d1f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0dde2a8a5ce97864f86b9cea5d4904e0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5596,6 +5600,10 @@ PrefabInstance:
     - target: {fileID: 6984585604530078326, guid: 8f98370ade15632498c45f93fd6021dd, type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984585604530078326, guid: 8f98370ade15632498c45f93fd6021dd, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f98370ade15632498c45f93fd6021dd, type: 3}
@@ -6058,7 +6066,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 8
-  m_Sprite: {fileID: 21300000, guid: bcf83b44c9b086b4487c8059e49f891a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9bbd653a3faebf54596d3fccb78251fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6119,7 +6127,7 @@ Animator:
   m_GameObject: {fileID: 1427655529}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 50305e4026ccc174b9a1b9eb67f70d1f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 30202cb79ce783e469b994caecf7b2c9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8417,6 +8425,10 @@ PrefabInstance:
     - target: {fileID: 6984585604530078326, guid: 8f98370ade15632498c45f93fd6021dd, type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984585604530078326, guid: 8f98370ade15632498c45f93fd6021dd, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f98370ade15632498c45f93fd6021dd, type: 3}
