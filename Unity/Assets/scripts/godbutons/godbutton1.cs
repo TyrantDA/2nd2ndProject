@@ -17,7 +17,6 @@ public class godbutton1 : MonoBehaviour
     }
     void Start()
     {
-        
     }
     private void OnMouseDown()
     {
