@@ -11,6 +11,7 @@ TagManager:
   - lightning
   - KillBox
   - water
+  - end
   layers:
   - Default
   - TransparentFX

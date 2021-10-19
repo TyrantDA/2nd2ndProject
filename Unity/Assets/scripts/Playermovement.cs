@@ -35,6 +35,7 @@ public class Playermovement : MonoBehaviour
     private int wounds;
 
     private bool wounded;
+    public bool saved;
 
     private void Awake()
     {
@@ -51,6 +52,7 @@ public class Playermovement : MonoBehaviour
         int num = rand.Next(10);
         wounded = false;
         jumpping = false;
+        saved = false;
     }
 
     // Update is called once per frame
@@ -68,6 +70,11 @@ public class Playermovement : MonoBehaviour
         if (wounds <= 0)
         {
             death();
+        }
+
+        if(saved)
+        {
+            //death2();
         }
 
     }
@@ -117,7 +124,6 @@ public class Playermovement : MonoBehaviour
   
     void Playerjump()
     {
-        Debug.Log("fff");
         if (Isground == true)
         {
             mybody.AddForce( new Vector2(0f, jumpForce)* jumpLemming, (ForceMode2D.Impulse));
@@ -132,6 +138,11 @@ public class Playermovement : MonoBehaviour
     void death()
     {
         Instantiate(angel, transform.position, transform.rotation);
+        Destroy(gameObject);
+    }
+
+    public void death2()
+    {
         Destroy(gameObject);
     }
 
@@ -170,6 +181,10 @@ public class Playermovement : MonoBehaviour
         {
             Invoke("Playerjump", 4f);
         }
+        if (collision.gameObject.CompareTag("end"))
+        {
+            saved = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -182,7 +197,6 @@ public class Playermovement : MonoBehaviour
         {
             wounded = false;
         }
-
     }
     private IEnumerator WaitTime()
     {
