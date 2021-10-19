@@ -15,6 +15,11 @@ public class Playermovement : MonoBehaviour
     private float jumpLemming;
 
     private float movementX;
+    private Animator anim;
+    private string Walk_Animation = "walk";
+    private string jump_Animation = "jump";
+
+    private bool jumpping = false;
 
     private Rigidbody2D mybody;
 
@@ -34,6 +39,7 @@ public class Playermovement : MonoBehaviour
     private void Awake()
     {
         mybody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
     }
 
@@ -44,11 +50,14 @@ public class Playermovement : MonoBehaviour
         System.Random rand = new System.Random();
         int num = rand.Next(10);
         wounded = false;
+        jumpping = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Animateplayer();
+
         //playerMoveKeyboard();
         wander();
         if(wounded)
@@ -62,8 +71,35 @@ public class Playermovement : MonoBehaviour
         }
 
     }
+    void Animateplayer()
+    {
 
-    void playerMoveKeyboard()
+        
+        if (jumpping)
+        {
+            anim.SetBool(jump_Animation, true);
+        }
+        else
+        {
+            anim.SetBool(jump_Animation, false);
+            if (MoveForce > 0)
+            {
+                anim.SetBool(Walk_Animation, true);
+                sr.flipX = false;
+            }
+            else if (MoveForce < 0)
+            {
+                anim.SetBool(Walk_Animation, true);
+                sr.flipX = true;
+            }
+            else
+            {
+                anim.SetBool(Walk_Animation, false);
+            }
+
+        }
+    }
+        void playerMoveKeyboard()
     {
         movementX = Input.GetAxisRaw("Horizontal");
         transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * MoveForce;
@@ -81,11 +117,16 @@ public class Playermovement : MonoBehaviour
   
     void Playerjump()
     {
+        Debug.Log("fff");
         if (Isground == true)
         {
             mybody.AddForce( new Vector2(0f, jumpForce)* jumpLemming, (ForceMode2D.Impulse));
             Isground = false;
+            jumpping = true;
+            StartCoroutine(WaitTime());
+
         }
+
     }
 
     void death()
@@ -143,4 +184,10 @@ public class Playermovement : MonoBehaviour
         }
 
     }
+    private IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(1.5f);
+        jumpping = false;
+    }
+
 } //class

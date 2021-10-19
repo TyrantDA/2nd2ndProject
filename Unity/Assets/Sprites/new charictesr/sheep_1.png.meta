@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: aad6cdd409d113e48974bd71135482af
+guid: 7169fbe0fde657a42b4949a64ecd0baf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -737181287219473588
-    second: Penguin jump frames 4 and 5_0
+      213: -2756231354190868991
+    second: sheep_1_0
   - first:
-      213: 5757720387150495925
-    second: Penguin jump frames 4 and 5_1
+      213: 8734779052495642883
+    second: sheep_1_1
+  - first:
+      213: -2942040197322163939
+    second: sheep_1_2
+  - first:
+      213: 4986697696185321623
+    second: sheep_1_3
+  - first:
+      213: 7613258476568915838
+    second: sheep_1_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,43 +106,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Penguin jump frames 4 and 5_0
+      name: sheep_1_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 301
-        width: 1934
-        height: 2174
+        x: 246
+        y: 180
+        width: 3009
+        height: 3796
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c43d738668105c5f0800000000000000
-      internalID: -737181287219473588
+      spriteID: 10ec8aebf26efb9d0800000000000000
+      internalID: -2756231354190868991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Penguin jump frames 4 and 5_1
+      name: sheep_1_1
       rect:
         serializedVersion: 2
-        x: 2221
-        y: 301
-        width: 1600
-        height: 2174
+        x: 3690
+        y: 215
+        width: 2257
+        height: 3761
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b04128bf2887ef40800000000000000
-      internalID: 5757720387150495925
+      spriteID: 301a687f44b283970800000000000000
+      internalID: 8734779052495642883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep_1_2
+      rect:
+        serializedVersion: 2
+        x: 6014
+        y: 1277
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1931b33706cb27d0800000000000000
+      internalID: -2942040197322163939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep_1_3
+      rect:
+        serializedVersion: 2
+        x: 6344
+        y: 246
+        width: 2277
+        height: 3730
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798826f422f443540800000000000000
+      internalID: 4986697696185321623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep_1_4
+      rect:
+        serializedVersion: 2
+        x: 8670
+        y: 1276
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f2f176f3ab7a960800000000000000
+      internalID: 7613258476568915838
       vertices: []
       indices: 
       edges: []
