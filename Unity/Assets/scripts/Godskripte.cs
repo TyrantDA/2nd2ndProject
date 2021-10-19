@@ -43,7 +43,7 @@ public class Godskripte : MonoBehaviour
                 {
                     Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     spawnPosition.z = 0.0f;
-                    spawnPosition.y = -0.484f;
+                    spawnPosition.y = 0.55f;
                     GameObject objectInstance = Instantiate(placeholder, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
                     spawnPosition.y = 1.2f;
                     GameObject objectInstance2 = Instantiate(lightningbox, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
