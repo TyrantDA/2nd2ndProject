@@ -7,11 +7,12 @@ public class godmove : MonoBehaviour
     [SerializeField]
     private float MoveForce = 10;
     private float movementX;
+    private Vector3 tempPos;
+    public float maxx;
 
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -22,6 +23,13 @@ public class godmove : MonoBehaviour
     void godmovekey()
     {
         movementX = Input.GetAxisRaw("Horizontal");
-        transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * MoveForce;
+        tempPos = transform.position + new Vector3(movementX, 0f, 0f) * Time.deltaTime * MoveForce;
+        if (tempPos.x < maxx)
+        {
+            tempPos.x = maxx;
+        }
+
+        transform.position = tempPos;
+
     }
 }

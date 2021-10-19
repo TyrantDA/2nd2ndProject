@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 291784557747809436}
   - component: {fileID: 4638006666674887863}
   - component: {fileID: 4638006666674887850}
+  - component: {fileID: 221445055}
+  - component: {fileID: 221445056}
   m_Layer: 6
   m_Name: big guy
   m_TagString: Untagged
@@ -74,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -6583130335584917346, guid: c3d7cb9dd4a5906449eee053d2d88590, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -121,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveForce: 1
   jumpForce: 1
-  speedLemming: 0.5
+  speedLemming: 2
   jumpLemming: 8
   angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
   wounds: 1
@@ -138,8 +140,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.6274261, y: 1.5257199}
-  m_Size: {x: 20.453312, y: 39.779064}
+  m_Offset: {x: 1.9068527, y: 1.5257199}
+  m_Size: {x: 24.924036, y: 39.779064}
   m_Direction: 0
 --- !u!95 &4638006666674887850
 Animator:
@@ -160,3 +162,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &221445055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291784557747809433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9b2bff9acd2e140a4ffbf61d770030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &221445056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291784557747809433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 650e2ed2ee7351a4b9d431877505aaae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinX: 0
+  MaxX: 0

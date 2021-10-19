@@ -13,8 +13,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 25.438465, y: 36.510002}
+  m_Offset: {x: 2.2251034, y: -2.5032282}
+  m_Size: {x: 19.875698, y: 41.51648}
   m_Direction: 0
 --- !u!95 &2327426146791328937
 Animator:
@@ -35,6 +35,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1395146573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8494675159245689500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9b2bff9acd2e140a4ffbf61d770030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1395146574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8494675159245689500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 650e2ed2ee7351a4b9d431877505aaae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinX: 0
+  MaxX: 0
 --- !u!1001 &3580930097990676667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 4922754348134539810, guid: c42b351f1c099d0439e666ad8b0bb053, type: 3}
       propertyPath: wounds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922754348134539810, guid: c42b351f1c099d0439e666ad8b0bb053, type: 3}
+      propertyPath: speedLemming
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4922754348134539811, guid: c42b351f1c099d0439e666ad8b0bb053, type: 3}
       propertyPath: m_RootOrder
@@ -60,11 +90,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4922754348134539811, guid: c42b351f1c099d0439e666ad8b0bb053, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.97
+      value: -31.25
       objectReference: {fileID: 0}
     - target: {fileID: 4922754348134539811, guid: c42b351f1c099d0439e666ad8b0bb053, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2
+      value: -3.44
       objectReference: {fileID: 0}
     - target: {fileID: 4922754348134539811, guid: c42b351f1c099d0439e666ad8b0bb053, type: 3}
       propertyPath: m_LocalPosition.z
@@ -102,6 +132,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 349130561733866326, guid: 100e124ac063e444d8dc3db3d5e96be5, type: 3}
+    - target: {fileID: 4922754348134539812, guid: c42b351f1c099d0439e666ad8b0bb053, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4922754348134539815, guid: c42b351f1c099d0439e666ad8b0bb053, type: 3}
       propertyPath: m_Name
       value: racoon
