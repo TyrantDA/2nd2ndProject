@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9196221800514692898}
   - component: {fileID: 9196221800514692897}
-  - component: {fileID: 9196221800514692896}
   - component: {fileID: 9196221800514692910}
+  - component: {fileID: 825027244100106732}
   m_Layer: 6
   m_Name: Angel
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 9196221800514692909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.02, y: -1.18, z: 0}
-  m_LocalScale: {x: 0.3869157, y: 0.45724046, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1757168063971477599, guid: 316468aa4923eb149a215c1b37a45b9c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5006a45f3d17b954698abc928292e462, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,22 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &9196221800514692896
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9196221800514692909}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.019191412, y: 0}
-  m_Size: {x: 0.7897019, y: 2.22}
-  m_Direction: 0
 --- !u!114 &9196221800514692910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,3 +98,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveForce: 1
   speedLemming: 0.5
+--- !u!70 &825027244100106732
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9196221800514692909}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 49.431522, y: 87.65}
+  m_Direction: 0

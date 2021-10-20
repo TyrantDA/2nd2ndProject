@@ -8,6 +8,8 @@ public class godbutton4 : MonoBehaviour
     private Animator anim;
     [SerializeField]
     private string buttonpushed = "pushed";
+    private string buttoncool = "Cooldwon";
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -36,8 +38,23 @@ public class godbutton4 : MonoBehaviour
             anim.SetBool(buttonpushed, false);
         }
     }
+    void cooldownbutton()
+    {
+        if (Godskripte.x.Lightningcooldown)
+        {
+            anim.SetBool(buttoncool, false);
+        }
+        if (!Godskripte.x.Lightningcooldown)
+        {
+            anim.SetBool(buttoncool, true);
+        }
+
+    }
     void Update()
     {
         Pushthebutton();
+
+        cooldownbutton();
     }
+
 }
