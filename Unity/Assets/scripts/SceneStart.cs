@@ -44,8 +44,6 @@ namespace ExceptionHandlingCsharp
         {
 
             int l = r.Next(3);
-
-            Debug.Log("in spawn function " + l);
             lemList[h] = Instantiate(lemmings[l], new Vector3(x, y, 0f), transform.rotation) as GameObject;
             // spawn distance apart
             x = x - 0.10f;
@@ -60,17 +58,15 @@ namespace ExceptionHandlingCsharp
         {
             for (int i = 0; i < lemList.Length; i++)
             {
-                if (gone[i] != true)
+                if (gone[i] != true || saved[i] != true)
                 {
                     try
                     {
                         Playermovement hold = lemList[i].GetComponent<Playermovement>();
-                        Debug.Log(hold.saved);
                         if (hold.saved)
                         {
                             save++;
                             saved[i] = true;
-                            Debug.Log("done");
                             counter--;
                         }
                     }
