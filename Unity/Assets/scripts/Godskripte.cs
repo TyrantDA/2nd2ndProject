@@ -19,6 +19,8 @@ public class Godskripte : MonoBehaviour
     public bool godbool4 = false;
     public bool godbool5 = false;
     public bool Lightningcooldown = true;
+    public bool isbread = false;
+    public float breadx = 0f;
 
     // Start is called before the first frame update
     void Start()    
@@ -55,7 +57,7 @@ public class Godskripte : MonoBehaviour
 
             }
         }
-       if (godbool3)
+        if (godbool3)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -78,7 +80,9 @@ public class Godskripte : MonoBehaviour
             {
                 if (Lightningcooldown)
                 {
+                    isbread = true;
                     Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    breadx = spawnPosition.x;
                     spawnPosition.z = 0.0f;
                     spawnPosition.y = 2f;
                     GameObject objectInstance3 = Instantiate(bread, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));

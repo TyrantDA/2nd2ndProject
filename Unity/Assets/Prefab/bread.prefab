@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 651705133}
   - component: {fileID: 7125541657879813088}
   - component: {fileID: 1789717152}
+  - component: {fileID: 3547046040005552894}
+  - component: {fileID: 788623776}
   m_Layer: 0
   m_Name: bread
   m_TagString: Untagged
@@ -372,3 +374,29 @@ PolygonCollider2D:
       - {x: -2.972417, y: -9.899868}
       - {x: -1.8669727, y: -9.899868}
       - {x: -1.8424072, y: -9.875303}
+--- !u!114 &3547046040005552894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533205317929870838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21fd3f3c36ec574fb0135eb343cd778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 07a0e6cfef6680f4abca9eed2e4230a6, type: 3}
+  volume: 6
+--- !u!114 &788623776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533205317929870838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0049de3aabe7ca46b73a7e07ad23305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

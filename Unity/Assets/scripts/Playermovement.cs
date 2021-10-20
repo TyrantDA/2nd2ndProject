@@ -58,6 +58,42 @@ public class Playermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!Godskripte.x.isbread)
+        {
+            wander();
+        }
+        if (Godskripte.x.isbread)
+        {
+            Debug.Log(Godskripte.x.breadx);
+            if(transform.position.x < Godskripte.x.breadx)
+            {
+                if(MoveForce == 1f)
+                {
+                    transform.position += new Vector3(MoveForce, 0f, 0f) * Time.deltaTime * speedLemming;
+                }
+                else
+                {
+                   MoveForce *= -1f;
+                }
+
+            }
+            if (transform.position.x > Godskripte.x.breadx)
+            {
+                if (MoveForce == -1f)
+                {
+                    transform.position += new Vector3(MoveForce, 0f, 0f) * Time.deltaTime * speedLemming;
+                }
+                else
+                {
+                    MoveForce *= -1f;
+                }
+
+
+                transform.position += new Vector3(MoveForce, 0f, 0f) * Time.deltaTime * speedLemming;
+
+            }
+        }
+
         Animateplayer();
 
         //playerMoveKeyboard();
@@ -166,6 +202,7 @@ public class Playermovement : MonoBehaviour
         
 
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("water"))
