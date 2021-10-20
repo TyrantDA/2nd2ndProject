@@ -60,17 +60,17 @@ namespace ExceptionHandlingCsharp
         {
             for (int i = 0; i < lemList.Length; i++)
             {
-                if (gone[i] != true || saved[i] != true)
+                if (gone[i] != true)
                 {
                     try
                     {
                         Playermovement hold = lemList[i].GetComponent<Playermovement>();
-                        //Debug.Log(hold.saved);
+                        Debug.Log(hold.saved);
                         if (hold.saved)
                         {
                             save++;
                             saved[i] = true;
-                            //Debug.Log("done");
+                            Debug.Log("done");
                             counter--;
                         }
                     }
