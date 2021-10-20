@@ -10,7 +10,7 @@ public class Pickupable : MonoBehaviour
     private float MinX, MaxX;
     void Start()
     {
-        MinX = -3.445169f;
+        MinX = -6f;
         MaxX = 40f;
     }
     private void OnMouseDown()
