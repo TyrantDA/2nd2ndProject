@@ -36,6 +36,7 @@ public class Playermovement : MonoBehaviour
 
     private bool wounded;
     public bool saved;
+    public bool dead;
 
     private void Awake()
     {
@@ -53,6 +54,7 @@ public class Playermovement : MonoBehaviour
         wounded = false;
         jumpping = false;
         saved = false;
+        dead = false;
     }
 
     // Update is called once per frame
@@ -109,7 +111,7 @@ public class Playermovement : MonoBehaviour
 
         if(saved)
         {
-            //death2();
+            death2();
         }
 
     }
@@ -172,6 +174,7 @@ public class Playermovement : MonoBehaviour
 
     void death()
     {
+        dead = true;
         Instantiate(angel, transform.position, transform.rotation);
         Destroy(gameObject);
     }
