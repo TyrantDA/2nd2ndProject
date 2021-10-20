@@ -64,7 +64,6 @@ public class Playermovement : MonoBehaviour
         }
         if (Godskripte.x.isbread)
         {
-            Debug.Log(Godskripte.x.breadx);
             if(transform.position.x < Godskripte.x.breadx)
             {
                 if(MoveForce == 1f)
@@ -197,6 +196,7 @@ public class Playermovement : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("wall"))
         {
+            Godskripte.x.isbread = false;
             MoveForce *= -1f; 
         }
         
@@ -216,7 +216,7 @@ public class Playermovement : MonoBehaviour
 
         if (collision.gameObject.CompareTag("barrier"))
         {
-            Invoke("Playerjump", 4f);
+            Invoke("Playerjump", 0.1f);
         }
         if (collision.gameObject.CompareTag("end"))
         {
