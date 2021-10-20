@@ -125,8 +125,10 @@ MonoBehaviour:
   jumpForce: 1
   speedLemming: 2
   jumpLemming: 8
-  angel: {fileID: 9196221800514692909, guid: e572aeecfd3cd2443a18d0e6f61c0a2a, type: 3}
-  wounds: 1
+  angel: {fileID: 4072640784675607052, guid: 1d515160a885d134eb804738dae99c18, type: 3}
+  wounds: 1000
+  saved: 0
+  dead: 0
 --- !u!70 &4638006666674887863
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
