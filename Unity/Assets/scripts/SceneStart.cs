@@ -11,7 +11,8 @@ namespace ExceptionHandlingCsharp
         int i = 0;
         int save;
         [SerializeField] int lemNum;
-        float x, y;
+        [SerializeField] float LemmingDisplacement;
+        [SerializeField] float x, y;
         int h;
         System.Random r;
         private GameObject[] lemList;
@@ -23,8 +24,6 @@ namespace ExceptionHandlingCsharp
         void Start()
         {
             save = 0;
-            x = -4.29f;
-            y = -1.46f;
             h = 0;
             r = new System.Random();
             Debug.Log("start");
@@ -46,7 +45,7 @@ namespace ExceptionHandlingCsharp
             int l = r.Next(3);
             lemList[h] = Instantiate(lemmings[l], new Vector3(x, y, 0f), transform.rotation) as GameObject;
             // spawn distance apart
-            x = x - 0.10f;
+            x = x - LemmingDisplacement;
             h++;
 
         }
@@ -58,7 +57,7 @@ namespace ExceptionHandlingCsharp
         {
             for (int i = 0; i < lemList.Length; i++)
             {
-                if (gone[i] != true || saved[i] != true)
+                if (gone[i] != true && saved[i] != true)
                 {
                     try
                     {
@@ -79,6 +78,7 @@ namespace ExceptionHandlingCsharp
                 }
             }
 
+            Debug.Log(counter);
             if (counter == 0)
             {
                 int c = 0;
