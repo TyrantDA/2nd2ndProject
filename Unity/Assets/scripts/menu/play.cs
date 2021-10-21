@@ -11,6 +11,8 @@ public class play : MonoBehaviour
     private void OnMouseDown()
     {
         SceneManager.LoadScene("level1");
+        Time.timeScale = 1;
+
     }
 
     // Update is called once per frame

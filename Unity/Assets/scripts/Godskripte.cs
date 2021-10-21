@@ -26,7 +26,7 @@ public class Godskripte : MonoBehaviour
     void Start()    
     {
         x = this;
-        Lightningcooldown = true;
+        Lightningcooldown = false;
     }
 
     // Update is called once per frame
@@ -39,6 +39,7 @@ public class Godskripte : MonoBehaviour
     {
         if (godbool1)
         {
+
             if (Input.GetMouseButtonDown(0))
             {
                 if (Lightningcooldown)
@@ -51,7 +52,10 @@ public class Godskripte : MonoBehaviour
                     GameObject objectInstance2 = Instantiate(lightningbox, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
                     Lightningcooldown = false;
                     StartCoroutine(WaitTime());
-
+                }
+                else
+                {
+                    StartCoroutine(WaitTime());
 
                 }
 
@@ -69,6 +73,11 @@ public class Godskripte : MonoBehaviour
                     Lightningcooldown = false;
                     StartCoroutine(WaitTime());
 
+
+                }
+                else
+                {
+                    StartCoroutine(WaitTime());
 
                 }
 
@@ -91,8 +100,13 @@ public class Godskripte : MonoBehaviour
 
 
                 }
+                else
+                {
+                    StartCoroutine(WaitTime());
 
+                }
             }
+
         }
     }
 
