@@ -37,6 +37,7 @@ public class Playermovement : MonoBehaviour
     private bool wounded;
     public bool saved;
     public bool dead;
+    private bool inWater;
 
     private void Awake()
     {
@@ -114,6 +115,10 @@ public class Playermovement : MonoBehaviour
             death2();
         }
 
+        if (inWater)
+        {
+            Physics2D.gravity = new Vector2(0f, -2.0f);
+        }
     }
     void Animateplayer()
     {
@@ -143,7 +148,7 @@ public class Playermovement : MonoBehaviour
 
         }
     }
-        void playerMoveKeyboard()
+    void playerMoveKeyboard()
     {
         movementX = Input.GetAxisRaw("Horizontal");
         transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * MoveForce;
@@ -211,6 +216,7 @@ public class Playermovement : MonoBehaviour
         if (collision.gameObject.CompareTag("water"))
         { 
             wounded = true;
+            inWater = true;
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
@@ -232,6 +238,7 @@ public class Playermovement : MonoBehaviour
         if (collision.gameObject.CompareTag("water"))
         {
             wounded = false;
+            inWater = false;
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {

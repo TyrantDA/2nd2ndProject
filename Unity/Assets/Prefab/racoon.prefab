@@ -70,7 +70,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4922754348134539810, guid: c42b351f1c099d0439e666ad8b0bb053, type: 3}
       propertyPath: wounds
-      value: 1
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4922754348134539810, guid: c42b351f1c099d0439e666ad8b0bb053, type: 3}
       propertyPath: speedLemming
